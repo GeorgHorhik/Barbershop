@@ -1,0 +1,294 @@
+body{
+    margin:0;
+    padding: 0;
+
+
+    font-family: 'PT Sans Narrow',"Arial", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 24px;
+    color: #fff;
+
+    background-color: #000;
+    background-image: url(img/Layer.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.visually-hidden{
+
+        position: absolute;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        height: 1px; width: 1px;
+        margin: -1px; padding: 0; border: 0;
+
+}
+.main-nav{
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 20px;
+
+
+}
+
+.page-nav,
+.user-nav{
+    list-style: none;
+    /*background-color: #000;*/
+}
+.main-nav a{
+
+    display: block;
+padding: 25px 20px;
+vertical-align: middle;
+color: #ffffff;
+}
+.main-nav a:focus,
+.main-nav a:hover{
+    background-color:#242424;
+}
+.advantages-item{
+    list-style: none;
+    text-align: center;
+}
+.advantages-item strong{
+    line-height: 42px;
+    font-size: 30px;
+}
+.white-columns,
+.sign-in
+{
+     background-color: #f8f5f2;
+     background-image: url(img/texture_!.png);
+     color: #000;
+}
+.news-block{
+    text-transform: none;
+}
+.gallery-contenet{
+    background-color: #ccc;
+    border: 7px solid #fff;
+}
+
+.btn{
+    font: inherit;
+    text-align: center;
+    vertical-align: center;
+    color: white;
+     background-color: #000000;
+     border: none;
+}
+.btn:active,
+.btn:hover,
+.btn:focus{
+    background-color: #663d15;
+}
+
+section h2{
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.page-sign-up-form input,
+.sign-in input{
+    font: inherit;
+    border: 2px solid #000;
+}
+
+
+.page-footer {
+    background-color: #252525;
+    color: white;
+    background-image: url(img/texture2.png);
+}
+
+a.underline_link{
+    color: white;
+    text-decoration: underline;
+}
+a.underline_link:hover,
+a.underline_link:focus,
+a.underline_link:active{
+    text-decoration: none;
+}
+
+.sign-in-form a{
+    color: #000;
+    text-decoration: underline;
+}
+.social-media{
+    list-style: none;
+}
+.footer-itm,
+.copyright{
+    text-align: center;
+}
+
+.popup h2{
+    font-size: 30px;
+    line-height: 42px;
+}
+.brown-check:focus,
+.brown-check:hover,
+.brown-check:active{
+    color: #663d15;
+
+}
+
+.map.popup img[alt="Карта"]{
+    border: 7px solid white;
+    box-shadow: 10px 10px 10x 0 black;
+
+}
+
+.partners-logo li{
+    list-style: none;
+}
+.partners-logo img{
+    opacity: 0.2;
+}
+
+/*style*/
+
+.page-header{
+}
+
+.page-header img{
+  width: 371px;
+  height: 155px;
+  order: 1;
+
+}
+.main-nav{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+}
+
+.page-nav,
+.user-nav{
+  min-height: 70px;
+  margin: 0px;
+  padding: 0px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+.page-nav{
+  width:620px;
+}
+.user-nav{
+  width: 140px;
+}
+
+.main-nav--wrapper{
+  margin-bottom: 60px;
+  width: 100%;
+  background-color: black;
+}
+
+.container{
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.main-nav .container{
+
+display: flex;
+justify-content: space-between;
+
+}
+.main-nav .container ul{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+  .advantages ul{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+.advantages-item{
+  width: 300px;
+  flex-grow: 1;
+  margin: 80px 10px;
+}
+
+.white-columns{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  margin-bottom: 36px;
+}
+
+.white-columns section{
+  width: 470px;
+  padding: 55px 60px;
+}
+
+.white-columns::after{
+  content: url(../img/gradiend.png);
+  position: absolute;
+  margin-left: 470px;
+  padding-top:75px;
+  padding-bottom: 66px;;
+}
+
+.page-footer{
+  min-height: 195px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.page-footer .container{
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.footer-contacts{
+  margin: 0px;
+  width: 320px;
+  padding-right: 10px;
+}
+
+.footer-itm{
+  width: 160;
+  padding: 0 10px;
+}
+
+.footer-itm{
+  margin-left: 80px;
+}
+
+.copyright{
+  margin-left: auto;
+}
+
+.page-footer .social-media{
+  display: flex;
+  justify-content: space-around;
+}
+.page-footer .social-media li{
+  flex-grow: 1;
+}

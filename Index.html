@@ -1,0 +1,152 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Барбершоп "Бородинский"</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" type="text/css"   media="screen" href="main.css" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+<body>
+    <header class="page-header">
+        <nav class="main-nav">
+          <img src="img/index-logo.svg" alt="Логотип сайта barbershop borodinski" class="page-logo">
+            <div class="main-nav--wrapper">
+              <div class="container">
+              <ul class="page-nav">
+                <li><a href="#">ИНФОРМАЦИЯ</a></li>
+                <li><a href="#">НОВОСТИ</a></li>
+                <li><a href="#">ПРАЙС-ЛИСТ</a></li>
+                <li><a href="#">МАГАЗИН</a></li>
+                <li><a href="#">КОНТАКТЫ</a></li>
+            </ul>
+            <ul class="user-nav">
+                <li>
+                    <a href="#" class="btn-link">ВХОД</a>
+                </li>
+              </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <main class="page-content container">
+        <h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
+        <section class="advantages">
+            <h2 class="visually-hidden">Особенности барбершопа</h2>
+            <ul >
+                <li class="advantages-item">
+                    <strong>БЫСТРО</strong>
+                    <p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
+                </li>
+                <li class="advantages-item">
+                    <strong>КРУТО</strong>
+                    <p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.
+                            МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!
+                            ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.
+                            </p>
+                </li>
+                <li class="advantages-item">
+                    <strong>ДОРОГО</strong>
+                    <p>
+                            НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <div class="white-columns">
+        <section class="news">
+            <h2>НОВОСТИ</h2>
+            <div class="news-block">
+                <p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ </p>
+                <time datetime="2018-01-11">11 января</time>
+            </div>
+            <div class="news-block">
+                <p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
+                <time datetime="2018-01-18">18 января</time>
+            </div>
+            <a class="btn">ВСЕ НОВОСТИ</a>
+        </section>
+
+        <section class="gallery">
+            <h2>ФОТОГАЛЕРЕЯ</h2>
+            <img class="gallery-contenet" src="img/Layer_21.jpg" alt="Фотографи барбершопа">
+            <button class="btn">НАЗАД</button>
+            <button class="btn">ВПЕРЕД</button>
+        </section>
+        </div>
+        <div class="white-columns">
+        <section class="contacts">
+            <h2>КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+            <p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+                АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8 <br>
+                ТЕЛЕФОН: +7 (495) 666-02-66</p>
+            <p>ВРЕМЯ РАБОТЫ: <br>
+                    ПН—ПТ: С 10:00 ДО 22:00 <br>
+                    СБ—ВС: С 10:00 ДО 19:00</p>
+            <a href="#" class="btn">КАК ПРОЕХАТЬ</a>
+            <a href="#" class="btn">ОБРАТНАЯ СВЯЗЬ</a>
+        </section>
+        <section class="call">
+            <h2>ЗАПИСАТЬСЯ</h2>
+            <p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
+            <form action="#" method="get" class="page-sign-up-form">
+                <label for="date-sign-up">ДАТА</label>
+                <input type="date" id="date-sign-up" name="date" > <br>
+                <label for="time-sign-up">ВРЕМЯ</label>
+                <input type="time" id="time-sign-up" name="time" > <br>
+                <label for="name-sign-up">ВАШЕ ИМЯ</label>
+                <input type="text" id="name-sign-up" name="name" placeholder="Борода" required><br>
+                <label for="phone-sign-up">ТЕЛЕФОН</label>
+                <input type="tel" id="phone-sign-up" name="phone" placeholder="7-123-456-78-90" required pattern="[0-9]{11}">
+                <button type="submit"  class="btn">Отправить</button>
+            </form>
+        </section>
+        </div>
+    </main>
+    <footer class="page-footer">
+      <div class="container">
+        <section class="footer-contacts">
+            <h3 class="visually-hidden">Контакты организации</h3>
+            <P>
+                    БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+                    АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8 <br>
+                    <a class="underline_link" href="#"> КАК НАС НАЙТИ?</a> <br>
+                    ТЕЛЕФОН: +7 (495) 666-02-66
+            </P>
+        </section>
+        <div class="footer-itm">
+            <b>ДАВАЙТЕ ДРУЖИТЬ!</b>
+            <ul class="social-media">
+                <li ><a href="http://vk.com" aria-label="Вконтакте"><img src="svg/vk.svg" alt="Вконтакте"></a></li>
+                <li ><a href="#" aria-label="Фейсбук"><img src="svg/facebook.svg" alt="Фейсбук"></a></li>
+                <li ><a href="#" aria-label="Инстаграм"><img src="svg/instagram.svg" alt="Инстаграм"></a></li>
+            </ul class="footer-itm">
+        </div>
+        <div class="copyright">
+            <p>РАЗРАБОТАНО:</p>
+            <a href="#" class="btn">html academy</a>
+        </div>
+      </div>
+    </footer>
+    <section class="map popup visually-hidden">
+        <h2 class="visually-hidden">Карта с местонахождением барбершопа</h2>
+        <img src="img/Слой_2.jpg" alt="Карта">
+        <a href="#" aria-label="Закыть" class="close-link"><img src="svg\cross.1.svg" alt="Закрыть"></a>
+    </section  >
+    <SEction class="sign-in poopup visually-hidden">
+    <h2>ЛИЧНЫЙ КАБИНЕТ</h2>
+    <p>Введите пожалуйста свой логин и пароль</p>
+    <form action="#" method="POST" class="sign-in-form">
+        <input type="text" id="form-sign-in__login" placeholder="ЛОГИН" name="sign-in__login" required>
+        <input type="password" name="form-sign-in__password" id="form-sign-in__password" placeholder="ПАРОЛЬ"  required> <br>
+        <label class="brown-check" for="form-sign-in__checkbox">ЗАПОМНИТЕ МЕНЯ</label>
+        <input type="checkbox" name="remember-me" id="form-sign-in__checkbox">
+        <button type="submit"  class="btn">Войти</button>
+        <a href="" class="underline_link">Я ЗАБЫЛ ПАРОЛЬ!</a>
+    </form>
+    </section>
+</body>
+</html>
