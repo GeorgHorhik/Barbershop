@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,92 +8,139 @@
   <title>МАГАЗИН "Бородинский"</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" type="text/css"   media="screen" href="main.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
   <script src="main.js"></script>
 </head>
-<body>
-  <header class="page-header">
-      <nav class="main-nav">
 
-          <div class="main-nav--wrapper">
-            <div class="container">
-              <img src="svg/logo.svg" alt="Логотип сайта barbershop borodinski" class="small-logo">
-            <ul class="page-nav">
-              <li><a href="#">ИНФОРМАЦИЯ</a></li>
-              <li><a href="#">НОВОСТИ</a></li>
-              <li><a href="#">ПРАЙС-ЛИСТ</a></li>
-              <li><a href="#" class="nav-selected">МАГАЗИН</a></li>
-              <li><a href="#">КОНТАКТЫ</a></li>
+<body class="shopHTML">
+  <header class="page-header">
+    <nav class="main-nav">
+      <div class="main-nav_wrapper">
+        <div class="container">
+          <img src="svg/logo.svg" alt="Логотип сайта barbershop borodinski" class="small-logo">
+          <ul class="main-nav__page-nav">
+            <li><a href="#">ИНФОРМАЦИЯ</a></li>
+            <li><a href="#">НОВОСТИ</a></li>
+            <li><a href="#">ПРАЙС-ЛИСТ</a></li>
+            <li><a href="#" class="nav-selected">МАГАЗИН</a></li>
+            <li><a href="#">КОНТАКТЫ</a></li>
           </ul>
-          <ul class="user-nav">
-              <li>
-                  <a href="#" class="btn-link">ВХОД</a>
-              </li>
-            </ul>
-            </div>
-          </div>
-      </nav>
+          <ul class="main-nav__user-nav">
+            <li>
+              <a href="#" class="nav-link_btn">ВХОД</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
   <main class="page-content container">
+    <div class="grow"></div>
     <h1>СРЕДСТВА ДЛЯ УХОДА</h1>
-      <nav class="link-history">
-        <ul>
-          <li>ГЛАВНАЯ </li>
-          <li>МАГАЗИН</li>
-          <li>МАГАЗИН</li>
-        </ul>
-      </nav>
-      <aside class="specifications">
-        <form class="" action="index.html" method="post">
-            <fieldset>
-              <legend><h2>ПРОИЗВОДИТЕЛИ:</h2></legend>
-            </fieldset>
-              <label for="Baxter of California">Baxter of California</label><input type="checkbox" name="Baxter of California" id="Baxter of California" checked> <br>
-              <label for="Mr Natty">Mr Natty</label><input type="checkbox" name="Mr Natty" id="Mr Natty"> <br>
-              <label for="Suavecito">Suavecito</label><input type="checkbox" name="Suavecito" id="Suavecito" checked> <br>
-              <label for="Malin+Goetz">Malin+Goetz</label><input type="checkbox" name="Malin+Goetz" id="Malin+Goetz">   <br>
-              <label for="Murray’s">Murray’s</label><input type="checkbox" name="Murray’s" id="Murray’s"> <br>
-              <label for="American Crew">American Crew</label><input type="checkbox" name="American Crew" id="American Crew" checked>
-            <fieldset>
-              <legend><h2>ГРУППЫ ТОВАРОВ:</h2></legend>
-              <label for="Бритвенные принадлежности">Бритвенные принадлежности</label>
-              <input type="checkbox" name="Бритвенные принадлежности" id="Бритвенные принадлежности"><br>
-              <label for="Средства для ухода">Средства для ухода</label>
-              <input type="checkbox" name="Средства для ухода" id="Средства для ухода"><br>
-              <label for="Аксессуары">Аксессуары</label>
-              <input type="checkbox" name="Аксессуары" id="Аксессуары">
-            </fieldset>
-            <input class="btn" type="submit" value="ПОКАЗАТЬ">
-        </form>
-      </aside>
+    <nav class="link-history">
+      <ul>
+        <li>ГЛАВНАЯ </li>
+        <li>МАГАЗИН</li>
+        <li>МАГАЗИН</li>
+      </ul>
+    </nav>
+    <aside class="specifications">
+      <form class="" action="index.html" method="post">
+        <fieldset>
+          <legend>
+            <h2>ПРОИЗВОДИТЕЛИ:</h2>
+          </legend>
+        </fieldset>
+        <label for="Baxter of California">Baxter of California</label><input type="checkbox" name="Baxter of California" id="Baxter of California" checked> <br>
+        <label for="Mr Natty">Mr Natty</label><input type="checkbox" name="Mr Natty" id="Mr Natty"> <br>
+        <label for="Suavecito">Suavecito</label><input type="checkbox" name="Suavecito" id="Suavecito" checked> <br>
+        <label for="Malin+Goetz">Malin+Goetz</label><input type="checkbox" name="Malin+Goetz" id="Malin+Goetz"> <br>
+        <label for="Murray’s">Murray’s</label><input type="checkbox" name="Murray’s" id="Murray’s"> <br>
+        <label for="American Crew">American Crew</label><input type="checkbox" name="American Crew" id="American Crew" checked>
+        <fieldset>
+          <legend>
+            <h2>ГРУППЫ ТОВАРОВ:</h2>
+          </legend>
+          <label for="Бритвенные принадлежности">Бритвенные принадлежности</label>
+          <input type="checkbox" name="Бритвенные принадлежности" id="Бритвенные принадлежности"><br>
+          <label for="Средства для ухода">Средства для ухода</label>
+          <input type="checkbox" name="Средства для ухода" id="Средства для ухода"><br>
+          <label for="Аксессуары">Аксессуары</label>
+          <input type="checkbox" name="Аксессуары" id="Аксессуары">
+        </fieldset>
+        <input class="btn" type="submit" value="ПОКАЗАТЬ">
+      </form>
+    </aside>
+    <section class="price-list">
+      <ul>
+        <li class="white-columns"><img src="img/price/itm-1.jpg" alt="Набор для путешествий «Baxter of California»">
+          <p>Набор для путешествий «Baxter of California»</p>
+          <p class="sel">2 900 ₽</p>
+          <a href="" class="btn">КУПИТЬ</a>
+        </li>
+        <li class="white-columns"><img src="img/price/itm-2.jpg" alt="Увлажняющий кондиционер    «Baxter of California»">
+          <p>Увлажняющий кондиционер «Baxter of California»</p>
+          <p class="sel">750 ₽</p>
+          <a href="" class="btn">КУПИТЬ</a>
+        </li>
+        <li class="white-columns"><img src="img/price/itm-3.jpg" alt="Гель для во  лос «SUAVECITO»">
+          <p>Гель для волос «SUAVECITO»</p>
+          <p class="sel">290 ₽</p>
+          <a href="" class="btn">КУПИТЬ</a>
+        </li>
+        <li class="white-columns"><img src="img/price/itm-4.jpg" alt="Глина для укладки   волос  «American crew»">
+          <p>Глина для уклад ки волос «American crew»</p>
+          <p class="sel">500 ₽</p>
+          <a href="" class="btn">КУПИТЬ</a>
+        </li>
+        <li class="white-columns"><img src="img/price/itm-5.jpg" alt="Гель для волос «AMERICAN CREW»">
+          <p>Гель для волос «AMERICAN CREW»</p>
+          <p class="sel">300 ₽</p>
+          <a href="" class="btn">КУПИТЬ</a>
+        </li>
+        <li class="white-columns"><img src="img/price/itm-6.jpg" alt="Набор д  ля бритья «Baxter of California»">
+          <p>Набор д ля бритья «Baxter of California»</p>
+          <p class="sel">3 900 ₽</p>
+          <a href="" class="btn">КУПИТЬ</a>
+        </li>
+      </ul>
+      <ol class="bread-crums">
+        <li><a class="btn">1</a></li>
+        <li class="bread-selected"><a class="btn">2</a></li>
+        <li><a class="btn">3</a></li>
+        <li><a class="btn">4</a></li>
+      </ol>
+    </section>
+
   </main>
   <footer class="page-footer">
     <div class="footer-wrapper">
-    <div class="container">
-      <section class="footer-contacts">
+      <div class="container">
+        <section class="footer-contacts">
           <h3 class="visually-hidden">Контакты организации</h3>
           <P>
-                  БАРБЕРШОП «БОРОДИНСКИЙ»<br>
-                  АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8 <br>
-                  <a class="underline_link" href="#"> КАК НАС НАЙТИ?</a> <br>
-                  ТЕЛЕФОН: +7 (495) 666-02-66
+            БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+            АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8 <br>
+            <a class="underline_link" href="#"> КАК НАС НАЙТИ?</a> <br>
+            ТЕЛЕФОН: +7 (495) 666-02-66
           </P>
-      </section>
-      <div class="footer-itm">
+        </section>
+        <div class="footer-itm">
           <b>ДАВАЙТЕ ДРУЖИТЬ!</b>
           <ul class="social-media">
-              <li ><a href="http://vk.com" aria-label="Вконтакте"><img src="svg/vk.svg" alt="Вконтакте"></a></li>
-              <li ><a href="#" aria-label="Фейсбук"><img src="svg/facebook.svg" alt="Фейсбук"></a></li>
-              <li ><a href="#" aria-label="Инстаграм"><img src="svg/instagram.svg" alt="Инстаграм"></a></li>
+            <li><a href="http://vk.com" aria-label="Вконтакте"><img src="svg/vk.svg" alt="Вконтакте"></a></li>
+            <li><a href="#" aria-label="Фейсбук"><img src="svg/facebook.svg" alt="Фейсбук"></a></li>
+            <li><a href="#" aria-label="Инстаграм"><img src="svg/instagram.svg" alt="Инстаграм"></a></li>
           </ul class="footer-itm">
-      </div>
-      <div class="copyright">
+        </div>
+        <div class="copyright">
           <p>РАЗРАБОТАНО:</p>
           <a href="#" class="btn">html academy</a>
+        </div>
       </div>
-    </div>
     </div>
   </footer>
 </body>
+
 </html>
