@@ -15,7 +15,7 @@
 
 <body class="shopHTML">
   <header class="page-header">
-    <nav class="main-nav">
+    <nav class="main-nav main-nav_relative">
       <div class="main-nav_wrapper">
         <div class="container ">
           <img src="svg/logo.svg" alt="Логотип сайта barbershop borodinski" class="small-logo">
@@ -36,6 +36,7 @@
     </nav>
   </header>
   <main class="page-content container ">
+    <div class="first-box ">
     <h1 class="">СРЕДСТВА ДЛЯ УХОДА</h1>
     <nav class="link-history ">
       <ul>
@@ -44,8 +45,9 @@
         <li>МАГАЗИН</li>
       </ul>
     </nav>
-    <div class="page-content__wrap">
-    <aside class="specifications ">
+  </div>
+    <div class="page-content__wrap ">
+    <aside class="specifications flex_blue">
       <form class="" action="index.html" method="post">
         <fieldset>
           <legend>
@@ -78,48 +80,66 @@
         <input class="btn" type="submit" value="ПОКАЗАТЬ">
       </form>
     </aside>
-    <section class="price-list ">
-      <ul>
+    <section class="price-list  ">
+      <ul class="">
         <li class="price-list_white-columns"><img src="img/price/itm-1.jpg" alt="Набор для путешествий «Baxter of California»">
+          <div class="white-columns_box">
           <p>Набор для путешествий «Baxter of California»</p>
-          <p class="sel">2 900 ₽</p>
-          <a href="" class="btn">КУПИТЬ</a>
+          <div class="white-columns__sel">
+            <p class="sel">2 900 ₽</p>
+            <a href="" class="btn">КУПИТЬ</a>
+          </div></div>
         </li>
         <li class="price-list_white-columns"><img src="img/price/itm-2.jpg" alt="Увлажняющий кондиционер    «Baxter of California»">
+          <div class="white-columns_box">
           <p>Увлажняющий кондиционер «Baxter of California»</p>
+          <div class="white-columns__sel">
           <p class="sel">750 ₽</p>
           <a href="" class="btn">КУПИТЬ</a>
+            </div></div>
         </li>
         <li class="price-list_white-columns"><img src="img/price/itm-3.jpg" alt="Гель для во  лос «SUAVECITO»">
+          <div class="white-columns_box">
           <p>Гель для волос «SUAVECITO»</p>
+          <div class="white-columns__sel">
           <p class="sel">290 ₽</p>
           <a href="" class="btn">КУПИТЬ</a>
+            </div></div>
         </li>
         <li class="price-list_white-columns"><img src="img/price/itm-4.jpg" alt="Глина для укладки   волос  «American crew»">
+          <div class="white-columns_box">
           <p>Глина для уклад ки волос «American crew»</p>
+          <div class="white-columns__sel">
           <p class="sel">500 ₽</p>
           <a href="" class="btn">КУПИТЬ</a>
+            </div></div>
         </li>
         <li class="price-list_white-columns"><img src="img/price/itm-5.jpg" alt="Гель для волос «AMERICAN CREW»">
+          <div class="white-columns_box">
           <p>Гель для волос «AMERICAN CREW»</p>
+          <div class="white-columns__sel">
           <p class="sel">300 ₽</p>
           <a href="" class="btn">КУПИТЬ</a>
+            </div></div>
         </li>
         <li class="price-list_white-columns"><img src="img/price/itm-6.jpg" alt="Набор д  ля бритья «Baxter of California»">
+          <div class="white-columns_box">
           <p>Набор д ля бритья «Baxter of California»</p>
+          <div class="white-columns__sel">
           <p class="sel">3 900 ₽</p>
           <a href="" class="btn">КУПИТЬ</a>
+            </div></div>
         </li>
       </ul>
-      </div>
-      <ol class="bread-crums">
+
+      <ol class="bread-crums flex_yellow">
         <li><a class="btn">1</a></li>
         <li class="bread-selected"><a class="btn">2</a></li>
         <li><a class="btn">3</a></li>
         <li><a class="btn">4</a></li>
       </ol>
     </section>
-
+  </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper ">
