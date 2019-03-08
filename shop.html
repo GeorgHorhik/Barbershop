@@ -14,16 +14,17 @@
 </head>
 
 <body class="shopHTML">
-  <header class="page-header">
+  
+    <header class="page-header">
     <nav class="main-nav main-nav_relative">
       <div class="main-nav_wrapper">
         <div class="container ">
-          <img src="svg/logo.svg" alt="Логотип сайта barbershop borodinski" class="small-logo">
+         <a href="Index.html" class="small-img-a"><img src="svg/logo.svg" alt="Логотип сайта barbershop borodinski" class="small-logo"></a>
           <ul class="main-nav__page-nav">
             <li><a href="#">ИНФОРМАЦИЯ</a></li>
             <li><a href="#">НОВОСТИ</a></li>
             <li><a href="#">ПРАЙС-ЛИСТ</a></li>
-            <li><a href="#" class="nav-selected">МАГАЗИН</a></li>
+            <li id="nav-selected"><a href="#" >МАГАЗИН</a></li>
             <li><a href="#">КОНТАКТЫ</a></li>
           </ul>
           <ul class="main-nav__user-nav">
@@ -47,40 +48,41 @@
     </nav>
   </div>
     <div class="page-content__wrap ">
-    <aside class="specifications flex_blue">
-      <form class="" action="index.html" method="post">
+    <aside class="specifications ">
+      <form class="form-setting" action="index.html" method="post">
         <fieldset>
           <legend>
-            <h2>ПРОИЗВОДИТЕЛИ:</h2>
+            ПРОИЗВОДИТЕЛИ:
           </legend>
-        </fieldset>
-        <input type="checkbox" name="Baxter of California" id="Baxter of California" checked>
-        <label for="Baxter of California">Baxter of California</label><br>
-        <input type="checkbox" name="Mr Natty" id="Mr Natty">
-        <label for="Mr Natty">Mr Natty</label>  <br>
-        <input type="checkbox" name="Suavecito" id="Suavecito" checked>
+        
+        <input class="visually-hidden" type="checkbox" name="Baxter-of-California" id="Baxter-of-California" checked>
+        <label for="Baxter-of-California">Baxter of California</label><br>
+        <input class="visually-hidden" type="checkbox" name="Mr-Natty" id="Mr-Natty">
+        <label for="Mr-Natty">Mr Natty</label>  <br>
+        <input class="visually-hidden" type="checkbox" name="Suavecito" id="Suavecito" checked>
         <label for="Suavecito">Suavecito</label><br>
-        <input type="checkbox" name="Malin+Goetz" id="Malin+Goetz">
+        <input class="visually-hidden" type="checkbox" name="Malin+Goetz" id="Malin+Goetz">
         <label for="Malin+Goetz">Malin+Goetz</label><br>
-        <input type="checkbox" name="Murray’s" id="Murray’s">
+        <input class="visually-hidden" type="checkbox" name="Murray’s" id="Murray’s">
         <label for="Murray’s">Murray’s</label><br>
-        <input type="checkbox" name="American Crew" id="American Crew" checked>
-        <label for="American Crew">American Crew</label>
+        <input class="visually-hidden" type="checkbox" name="American-Crew" id="AmericanCrew" checked>
+        <label for="AmericanCrew">American Crew</label>
+      </fieldset>
         <fieldset>
           <legend>
-            <h2>ГРУППЫ ТОВАРОВ:</h2>
+            ГРУППЫ ТОВАРОВ
           </legend>
-          <input type="checkbox" name="Бритвенные принадлежности" id="Бритвенные принадлежности">
-          <label for="Бритвенные принадлежности">Бритвенные принадлежности</label> <br>
-          <input type="checkbox" name="Средства для ухода" id="Средства для ухода">
-          <label for="Средства для ухода">Средства для ухода</label> <br>
-          <input type="checkbox" name="Аксессуары" id="Аксессуары">
+          <input class="visually-hidden" type="checkbox" name="Бритвенные-принадлежности" id="Бритвенные-принадлежности">
+          <label for="Бритвенные-принадлежности">Бритвенные принадлежности</label> <br>
+          <input class="visually-hidden" type="checkbox" name="Средства-для-ухода" id="Средства-для-ухода">
+          <label for="Средства-для-ухода">Средства для ухода</label> <br>
+          <input class="visually-hidden" type="checkbox" name="Аксессуары" id="Аксессуары">
           <label for="Аксессуары">Аксессуары</label>
         </fieldset>
         <input class="btn" type="submit" value="ПОКАЗАТЬ">
       </form>
     </aside>
-    <section class="price-list  ">
+    <section class="price-list">
       <ul class="">
         <li class="price-list_white-columns"><img src="img/price/itm-1.jpg" alt="Набор для путешествий «Baxter of California»">
           <div class="white-columns_box">
@@ -132,7 +134,7 @@
         </li>
       </ul>
 
-      <ol class="bread-crums flex_yellow">
+      <ol class="bread-crums ">
         <li><a class="btn">1</a></li>
         <li class="bread-selected"><a class="btn">2</a></li>
         <li><a class="btn">3</a></li>
@@ -157,7 +159,7 @@
           <b class="">ДАВАЙТЕ ДРУЖИТЬ!</b>
           <ul class="social-media ">
             <li><a href="http://vk.com" aria-label="Вконтакте"></a></li>
-            <li><a href="#" aria-label="Фейсбук"></a></a></li>
+            <li><a href="#" aria-label="Фейсбук"></a></li>
             <li><a href="#" aria-label="Инстаграм"></a></li>
           </ul>
         </div>
