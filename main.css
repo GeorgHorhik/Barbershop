@@ -50,6 +50,10 @@ a {
   .link-history ul li.active{
     color:#aba9a7;
   }
+
+  .link-history ul li a{
+    color: black;
+  }
 .romb-list::before{
   content: " ";
   background-color: #000;
@@ -729,6 +733,53 @@ input[id="Malin+Goetz"]:checked ~ label[for="Malin+Goetz"]::before{
   background-size: 14px;
 }
 
+.for-radio{
+  position: relative;
+}
+.for-radio::before{
+  content:"";
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: -38px;
+  width: 16px;
+  height: 16px;
+  background-color: #f9f6f3;
+  border: 2.5px solid #000; 
+  border-radius: 50%;
 
+  /* width: 8px;
+  height: 8px;
+  background-color: #f9f6f3;
+
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 4px #f9f6f3,
+   0px 0px 0px 6px #000;
+  */
+} 
+
+input[type="radio"]:checked + .for-radio::before{
+  left: -32px;
+  top: 5px;
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  border: none;
+  
+ 
+
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 4px #f9f6f3,
+   0px 0px 0px 6px #000;
+}
+
+input[type="radio"]:hover:not(:disabled) + .for-radio{
+  color: #663d15;
+}
+
+input[type="radio"]:disabled +.for-radio,
+input[type="radio"]:disabled +.for-radio::before{
+  opacity: 0.6;
+}
 
 /*style*/
