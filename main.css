@@ -54,6 +54,13 @@ a {
   .link-history ul li a{
     color: black;
   }
+
+  .romb-list{
+    list-style-type: none;
+    position: relative;
+  }
+
+
 .romb-list::before{
   content: " ";
   background-color: #000;
@@ -410,6 +417,9 @@ section h2 {
 .white-columns_box p>a{
   color: black;
 }
+
+
+
 /*.price-list_white-columns{
 
   background-clip: padding-box;
@@ -612,6 +622,71 @@ a.underline_link:active {
 .sign-in-form a {
   color: #000;
   text-decoration: underline;
+}
+
+
+.first-box  h1{
+  font-size: 30px;
+
+line-height: 42px;
+text-transform: uppercase
+}
+/*
+*/
+.Item1{
+  display: flex;
+  justify-content: space-between;
+}
+.Item1 .info{
+  position: relative;
+}
+.item-photos img:nth-of-type(1n+3){
+  width: 140px;
+  
+  margin-left: 18px;
+  margin-top: 21px;
+  
+}
+.item-photos .big{
+  margin-top: 58px;
+}
+
+.item-photos img{
+  box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
+}
+.Item1 .info p:last-child{
+  width: 379px;
+}
+   .info p{
+    margin-bottom: 40px;
+  }
+.vendor-code{
+  float: right;
+  color: #aeaeae;
+  position: absolute;
+  top: -15px;
+  right: 0px;
+  
+}
+
+.buy .white-columns__sel{
+  width: 178px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-bottom: 67px;
+  
+}
+
+.Item-info{
+  margin-top: 60px;
+}
+
+.buy .white-columns__sel p{
+  width: 109px;
+}
+.buy .white-columns__sel a{
+  
 }
 
 /*
