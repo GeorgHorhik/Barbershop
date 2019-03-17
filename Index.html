@@ -18,7 +18,7 @@
     <nav class="main-nav">
       <img src="img/index-logo.svg" class="index-logo page-logo" alt="Логотип сайта barbershop borodinski" >
       <div class="main-nav_wrapper ">
-        <div class="container flex_blue">
+        <div class="container ">
           <ul class="main-nav__page-nav ">
             <li><a href="#">ИНФОРМАЦИЯ</a></li>
             <li><a href="#">НОВОСТИ</a></li>
@@ -96,14 +96,26 @@
         <h2>ЗАПИСАТЬСЯ</h2>
         <p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
         <form action="#" method="get" class="page-sign-up-form">
-          <input type="date" id="date-sign-up" name="date"> <br>
-          <label for="date-sign-up">ДАТА</label>
-          <input type="time" id="time-sign-up" name="time"> <br>
-          <label for="time-sign-up">ВРЕМЯ</label>
-          <input type="text" id="name-sign-up" name="name" placeholder="Борода" required><br>
-          <label for="name-sign-up">ВАШЕ ИМЯ</label>
+          <p>
+            <label for="date-sign-up">ДАТА</label>
+          <input type="date" id="date-sign-up" name="date">
+        </p>
+
+          <p>
+            <label for="time-sign-up">ВРЕМЯ</label>
+          <input type="time" id="time-sign-up" name="time">
+        </p>
+
+          <p>
+            <label for="name-sign-up">ВАШЕ ИМЯ</label>
+          <input type="text" id="name-sign-up" name="name" placeholder="Борода" required>
+        </p>
+            
+          <p>
+            <label for="phone-sign-up">ТЕЛЕФОН</label>
           <input type="tel" id="phone-sign-up" name="phone" placeholder="7-123-456-78-90" required pattern="[0-9]{11}">
-          <label for="phone-sign-up">ТЕЛЕФОН</label>
+        </p>
+
           <button type="submit" class="btn">ОТПРАВИТЬ</button>
         </form>
       </section>
