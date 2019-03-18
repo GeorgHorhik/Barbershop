@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.advantages-item p, .page-sign-up-form > p, .page-sign-up-form > p label {
+.advantages-item p, .white-columns section h2, .gallery_wrap, .page-sign-up-form > p, .page-sign-up-form > p label {
   margin: 0;
   padding: 0;
 }
@@ -18,7 +18,8 @@ body {
   color: #fff;
   background-color: #000;
   background-image: url(img/Layer.png);
-  background-position: top center;
+  background-position-y: 40px;
+  background-position-x: center;
   background-repeat: no-repeat;
 }
 
@@ -195,7 +196,6 @@ a.underline_link {
 
 .main-nav__page-nav,
 .main-nav__user-nav {
-  background-color: red;
   min-height: 70px;
   margin: 0px;
   padding: 0px;
@@ -209,10 +209,14 @@ a.underline_link {
   width: 620px;
 }
 
+.main-nav__user-nav li a {
+  padding-left: 53px;
+}
+
 .main-nav__user-nav li a::before {
   content: url(svg/login.svg);
   position: absolute;
-  left: -10px;
+  left: 20px;
   top: 29px;
   opacity: 0.3;
 }
@@ -250,7 +254,7 @@ a.underline_link {
 }
 
 #nav-selected:after {
-  content: "1";
+  content: "";
   width: 100%;
   height: 4px;
   z-index: 300000;
@@ -287,13 +291,13 @@ a.underline_link {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   background-color: #fff;
-  top: 50px;
+  top: 52px;
   left: 50%;
   margin-left: -10px;
 }
 
 .advantages-item p {
-  margin-top: 53px;
+  margin-top: 60px;
 }
 
 .advantages ul {
@@ -319,9 +323,22 @@ a.underline_link {
   color: #000;
 }
 
+.white-columns:first-of-type {
+  margin-top: 81px;
+}
+
 .white-columns section {
   width: 470px;
-  padding: 55px 60px;
+  padding-right: 80px;
+  padding-left: 80px;
+  padding-bottom: 55px;
+  padding-top: 45px;
+}
+
+.white-columns section h2 {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  margin-block-start-margin-block-end: 0;
 }
 
 .white-columns::before {
@@ -333,11 +350,62 @@ a.underline_link {
 
 .news-block {
   text-transform: none;
+  margin-bottom: 5px;
+}
+
+.news-block p {
+  margin-bottom: 3px;
+}
+
+.news-block:last-of-type p {
+  margin-top: 20px;
+}
+
+.news-block + .btn {
+  margin-top: 20px;
 }
 
 .gallery-contenet {
   background-color: #ccc;
   border: 7px solid #fff;
+  margin-bottom: 30px;
+}
+
+.gallery_wrap {
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.gallery_wrap .btn:first-child {
+  position: absolute;
+  left: 0px;
+}
+
+.gallery_wrap .btn:last-child {
+  position: absolute;
+}
+
+.white-columns section.contacts {
+  padding-top: 42px;
+}
+
+.white-columns section.contacts h2 {
+  width: 323px;
+}
+
+.white-columns section.contacts p {
+  margin-top: 20px;
+}
+
+.white-columns section.contacts a {
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.white-columns section.contacts a:last-child {
+  padding: 10px 24px;
 }
 
 .btn {
@@ -349,6 +417,8 @@ a.underline_link {
   border: none;
   -webkit-transform: uppercase;
           transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .btn:active,
@@ -512,7 +582,7 @@ fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 60px;
+  padding-top: 57px;
   padding-bottom: 40px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -535,6 +605,10 @@ fieldset {
           justify-content: center;
   background-clip: border-box;
   margin-top: 65px;
+}
+
+.page-footer__wrapper p {
+  margin: 0;
 }
 
 .page-footer__contacts {
@@ -645,9 +719,15 @@ fieldset {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.page-footer__copyright .btn {
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 10px;
 }
 
 a.underline_link:hover,
@@ -725,6 +805,14 @@ a.underline_link:active {
   width: 109px;
 }
 
+.white-columns section.call {
+  padding-top: 42px;
+}
+
+.white-columns section.call > p {
+  margin-top: 20px;
+}
+
 .page-sign-up-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -736,6 +824,9 @@ a.underline_link:active {
 
 .page-sign-up-form > p {
   width: 140px;
+}
+
+.page-sign-up-form > p:nth-of-type(2n + 1) {
   margin-right: 20px;
 }
 
@@ -750,8 +841,8 @@ a.underline_link:active {
           box-sizing: border-box;
   width: 140px;
   padding-left: 17px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin-bottom: 10px;
 }
 
@@ -759,8 +850,8 @@ a.underline_link:active {
   display: inline-block;
   max-width: 100%;
   min-width: 300px;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding-top: 8px;
+  padding-bottom: 10px;
   margin-top: 10px;
 }
 

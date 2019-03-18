@@ -13,8 +13,9 @@ body
 .indexHTML 
 	color: #fff 
 	background-color: #000 
-	background-image: url(img/Layer.png) 
-	background-position: top center 
+	background-image: url(img/Layer.png)
+	background-position-y: 40px
+	background-position-x: center
 	background-repeat: no-repeat 
 .shopHTML 
 	background-color: #f8f5f2 
@@ -121,7 +122,6 @@ a
 	position: relative
 .main-nav__page-nav,
 .main-nav__user-nav 
-	background-color: red
 	min-height: 70px 
 	margin: 0px 
 	padding: 0px 
@@ -131,10 +131,11 @@ a
 	width: 620px 
 .main-nav__user-nav 
 	li a
+		padding-left: 53px
 		&::before
 			content: url(svg/login.svg)
 			position: absolute
-			left: -10px
+			left: 20px
 			top: 29px
 			opacity: 0.3
 		&:focus::before, &:hover::before, &:active::before
@@ -159,7 +160,7 @@ a
 	overflow: hidden 
 	position: relative 
 	&:after 
-		content: "1" 
+		content: "" 
 		width: 100% 
 		height: 4px 
 		z-index: 300000 
@@ -190,12 +191,12 @@ a
 			height: 20px
 			transform: rotate(45deg)
 			background-color: #fff
-			top: 50px
+			top: 52px
 			left: 50%
 			margin-left: -10px
 	p
 		@extend %zero
-		margin-top: 53px
+		margin-top: 60px
 .advantages
 	ul 
 		display: flex 
@@ -207,13 +208,25 @@ a
 	display: -ms-flex 
 	display: flex 
 	margin-bottom: 36px 
+	margin-top: 
 	position: relative 
 	background-color: #f8f5f2 
 	background-image: url(img/texture1.png) 
 	color: #000 
+	&:first-of-type
+		margin-top: 81px
 	section 
 		width: 470px 
-		padding: 55px 60px 
+		padding:
+			right: 80px
+			left: 80px
+			bottom: 55px
+			top: 45px
+		& h2
+			@extend %zero
+			margin-block-start: 0
+   			margin-block-end: 0 
+
 	&::before 
 		content: url(img/gradiend.png) 
 		position: absolute 
@@ -221,9 +234,44 @@ a
 		bottom: 75px 
 .news-block 
 	text-transform: none 
+	margin-bottom: 5px
+	& p
+		margin: 
+			bottom: 3px
+	&:last-of-type p
+		margin-top: 20px
+	&+.btn
+		margin-top: 20px
+			
 .gallery-contenet 
 	background-color: #ccc 
 	border: 7px solid #fff 
+	margin-bottom: 30px
+.gallery_wrap
+	@extend %zero
+	margin-left: 10px
+	margin-top: 20px
+	& .btn:first-child
+		position: absolute
+		left: 0px
+	& .btn:last-child
+		right 0px
+		position: absolute
+.white-columns section.contacts
+	padding-top: 42px
+	h2
+		width: 323px
+	p
+		margin-top: 20px
+	& a
+		display: inline-block
+		padding: 10px 30px
+		margin-top: 10px
+		margin-right: 20px
+	& a:last-child
+		padding: 10px 24px
+
+	
 .btn 
 	font: inherit 
 	text-align: center 
@@ -232,6 +280,8 @@ a
 	background-color: #000000 
 	border: none 
 	transform: uppercase 
+	font-size: 14px
+	line-height: 24px
 .btn:active,
 .btn:hover,
 .btn:focus 
@@ -320,7 +370,7 @@ fieldset
 	background-clip: border-box 
 	.container 
 		display: flex 
-		padding-top: 60px 
+		padding-top: 57px 
 		padding-bottom: 40px 
 		justify-content: space-between 
 		background-image: url(img/texture2.png) 
@@ -335,10 +385,13 @@ fieldset
 	justify-content: center 
 	background-clip: border-box 
 	margin-top: 65px 
+	p 
+		margin: 0
 .page-footer__contacts 
 	width: 310px 
 	padding-right: 10px 
-	flex-grow: 80 
+	flex-grow: 80
+	
 .page-footer__social 
 	width: 140px 
 	padding-right: 10px 
@@ -405,7 +458,11 @@ fieldset
 	display: flex 
 	justify-content: center 
 	flex-direction: column 
-	align-items: center 
+	align-items: flex-end
+	& .btn
+		display: inline-block
+		padding: 10px 30px 
+		margin-top: 10px 
 a.underline_link:hover,
 a.underline_link:focus,
 a.underline_link:active 
@@ -454,16 +511,20 @@ a.underline_link:active
 		margin-bottom: 67px 
 		p 
 			width: 109px 
+.white-columns section.call
+	padding-top: 42px	
+	&>p
+		 margin-top: 20px
 
 .page-sign-up-form
 	display: flex
 	flex-wrap: wrap
-	
 	padding: 0
 	&>p
 		@extend %zero
 		width: 140px
-		margin-right: 20px	
+		&:nth-of-type(2n + 1)
+			margin-right: 20px	
 		& label
 			@extend %zero
 			display: block
@@ -475,16 +536,16 @@ a.underline_link:active
 		width: 140px
 		padding:
 			left: 17px
-			top: 10px
-			bottom: 10px
+			top: 5px
+			bottom: 5px
 		margin-bottom: 10px
 	& .btn
 		display: inline-block
 		max-width: 100%
 		min-width: 300px
 		padding:
-			top: 11px
-			bottom: 11px 
+			top: 8px
+			bottom: 10px 
 		margin-top: 10px
 		
 
